@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Highway</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="homeScreen" class="pixel">
+        <h1>RETRO HIGHWAY</h1>
+        <button id="startBtn">START</button>
+        <div id="instructions">
+            Move Left <span class="big-arrow">←</span> and Right <span class="big-arrow">→</span> to avoid traffic.
+        </div>
+        <div id="credits">Created by VIKAS RAJ | Music: Audioinsmusic</div>
+
+        <div id="homeSettingsMenu">
+            <button id="musicToggleBtn">Pause Music</button>
+            <button id="resetHighScoreBtn">Reset High Score</button>
+            <button id="closeHomeSettingsBtn">Close</button>
+        </div>
+
+        <div id="highScoreDisplay">High Score: 0</div>
+    </div>
+
+    <canvas id="gameCanvas" width="530" height="600" style="display:none;"></canvas>
+    <div id="score">Score: 0</div>
+    <button id="settingsBtn">⚙️</button>
+    <button id="volumeBtn">🔊</button>
+    <div id="volumeControl">
+        <input type="range" id="volumeSlider" min="0" max="100" value="50">
+        <span id="volumeValue">50%</span>
+    </div>
+    <div id="settingsMenu">
+        <button id="homeBtn">Home</button>
+        <button id="musicToggleBtnGame">Pause Music</button>
+        <button id="continueBtn">Continue</button>
+    </div>
+
+    <div id="gameOverBox">
+        <h2>GAME OVER</h2>
+        <p id="finalScore">Your Score: 0</p>
+        <button id="restartBtn">Restart</button>
+    </div>
+
+    <audio id="bgMusic" loop></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
