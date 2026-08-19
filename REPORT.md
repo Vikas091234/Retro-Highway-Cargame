@@ -514,24 +514,7 @@ All major game logic is contained in `game.js`. A larger game could benefit from
 
 ---
 
-## 20. Possible Future Improvements
-
-Potential improvements include:
-
-1. Separate the large `game.js` file into ES modules.
-2. Preload and cache all image assets.
-3. Add automated unit tests for pattern generation and accessibility rules.
-4. Add deterministic seeded pattern generation for reproducible debugging.
-5. Measure traffic-generation performance and animation-frame timing.
-6. Improve the formal definition of pattern solvability.
-7. Add mobile/touch controls.
-8. Add gameplay telemetry for quantitative evaluation of the adaptive system.
-9. Add a lightweight development/debug overlay showing generated patterns and accessibility checks.
-10. Replace heuristic thresholds with parameterized configuration so difficulty can be tuned without editing core logic.
-
----
-
-## 21. Conclusion
+## 20. Conclusion
 
 Retro Highway is a self-contained browser game that goes beyond basic random obstacle spawning.
 
